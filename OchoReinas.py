@@ -62,5 +62,5 @@ def fitness(chromosome):
                 clashes += 1
     return n - clashes
 
-best_solution = genetic_algorithm(pop_size=100, mutation_rate=0.1, generations=100)
+best_solution = genetic_algorithm(pop_size=100, mutation_rate=0.1, generations=20)
 print("Mejor solución encontrada:", best_solution)
