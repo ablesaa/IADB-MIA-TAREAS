@@ -4,7 +4,7 @@ def genetic_algorithm(pop_size, mutation_rate, generations):
     # Algoritmo genético principal
     population = []
     for _ in range(pop_size):
-        chromosome = list(range(8))
+        chromosome = list(range(5))
         random.shuffle(chromosome)
         population.append(chromosome)
 
@@ -62,5 +62,5 @@ def fitness(chromosome):
                 clashes += 1
     return n - clashes
 
-best_solution = genetic_algorithm(pop_size=100, mutation_rate=0.1, generations=20)
+best_solution = genetic_algorithm(pop_size=100, mutation_rate=0.1, generations=100)
 print("Mejor solución encontrada:", best_solution)
